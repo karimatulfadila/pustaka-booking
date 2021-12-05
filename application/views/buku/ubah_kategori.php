@@ -4,7 +4,7 @@
         <div class="col-lg-6">
             <?php if (validation_errors()) {
                 $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-message" role="alert">Nama Kategori tidak boleh Kosong</div>');
-                redirect('buku/ubahkategori/' . $k['id']);
+                redirect('buku/ubahKategori/' . $k['id']);
             } ?>
             <?php foreach ($kategori as $k) { ?>
                 <form action="<?= base_url('buku/ubahKategori'); ?>" method="post">
